@@ -40,17 +40,17 @@ namespace JT808.Protocol.Test.Simples
             //serviceDescriptors.AddJT808Configure(new DT1Config())
             //                  .AddJT808Configure(new DT2Config());
             //注册工厂
-            serviceDescriptors.AddSingleton(factory =>
+            serviceDescriptors.AddSingleton( f =>
             {
                 Func<string, IJT808Config> accesor = type =>
                 {
                     if (type == "DT1")
                     {
-                        return factory.GetRequiredService<DT1Config>();
+                        return f.GetRequiredService<DT1Config>();
                     }
                     else if (type == "DT2")
                     {
-                        return factory.GetRequiredService<DT2Config>();
+                        return f.GetRequiredService<DT2Config>();
                     }
                     else
                     {
