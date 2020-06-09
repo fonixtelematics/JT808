@@ -6,6 +6,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <OutputType>Exe</OutputType>
     <StartupObject />
+    <AssemblyName>Fonix.Gateway.JT808.Benchmark</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

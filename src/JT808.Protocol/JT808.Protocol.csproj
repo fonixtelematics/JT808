@@ -16,6 +16,7 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Version>2.2.8</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <AssemblyName>Fonix.Gateway.JT808</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>$(OutputPath)$(MSBuildProjectName).xml</DocumentationFile>

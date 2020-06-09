@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>JT808.Protocol</name>
+        <name>Fonix.Gateway.JT808</name>
     </assembly>
     <members>
         <member name="T:JT808.Protocol.Buffers.JT808BufferWriter">
