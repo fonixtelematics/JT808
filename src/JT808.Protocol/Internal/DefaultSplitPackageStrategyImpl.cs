@@ -4,8 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("JT808.Protocol.Benchmark")]
-[assembly: InternalsVisibleTo("JT808.Protocol.Test")]
+[assembly: InternalsVisibleTo( "Fonix.Gateway.JT808.Benchmark" )]
+[assembly: InternalsVisibleTo( "Fonix.Gateway.JT808.Test" )]
 namespace JT808.Protocol.Internal
 {
     internal class DefaultSplitPackageStrategyImpl : IJT808SplitPackageStrategy
