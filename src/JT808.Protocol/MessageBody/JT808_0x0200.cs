@@ -80,22 +80,26 @@ namespace JT808.Protocol.MessageBody
             JT808_0x0200 jT808_0X0200 = new JT808_0x0200();
             jT808_0X0200.AlarmFlag = reader.ReadUInt32();
             jT808_0X0200.StatusFlag = reader.ReadUInt32();
-            if ( ((jT808_0X0200.StatusFlag >> 28) & 1) == 1 )
-            {   //南纬 268435456 0x10000000
-                jT808_0X0200.Lat = (int)reader.ReadUInt32();
-            }
-            else
-            {
-                jT808_0X0200.Lat = reader.ReadInt32();
-            }
-            if ( ((jT808_0X0200.StatusFlag >> 27) & 1) == 1 )
-            {   //西经 ‭134217728‬ 0x8000000
-                jT808_0X0200.Lng = (int)reader.ReadUInt32();
-            }
-            else
-            {
-                jT808_0X0200.Lng = reader.ReadInt32();
-            }
+            //if ( ((jT808_0X0200.StatusFlag >> 28) & 1) == 1 )
+            //{   //南纬 268435456 0x10000000
+            //    jT808_0X0200.Lat = (int)reader.ReadUInt32();
+            //}
+            //else
+            //{
+            //    jT808_0X0200.Lat = reader.ReadInt32();
+            //}
+            //if ( ((jT808_0X0200.StatusFlag >> 27) & 1) == 1 )
+            //{   //西经 ‭134217728‬ 0x8000000
+            //    jT808_0X0200.Lng = (int)reader.ReadUInt32();
+            //}
+            //else
+            //{
+            //    jT808_0X0200.Lng = reader.ReadInt32();
+            //}
+
+            jT808_0X0200.Lat = (int)reader.ReadUInt32();
+            jT808_0X0200.Lng = (int)reader.ReadUInt32();
+
             jT808_0X0200.Altitude = reader.ReadUInt16();
             jT808_0X0200.Speed = reader.ReadUInt16();
             jT808_0X0200.Direction = reader.ReadUInt16();
